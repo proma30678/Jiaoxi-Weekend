@@ -33,9 +33,9 @@ function googleMapsRouteUrl(origin, destination, mode = "driving") {
 const days = [
   {
     id: 1,
-    weekday: "SAT",
-    date: "01",
-    month: "Day 1",
+    weekday: "WED",
+    date: "24",
+    month: "06月",
     title: "中西區散步",
     subtitle: "台南車站 → 友愛街",
     dayLabel: "Day 1 / 2",
@@ -132,9 +132,9 @@ const days = [
   },
   {
     id: 2,
-    weekday: "SUN",
-    date: "02",
-    month: "Day 2",
+    weekday: "THU",
+    date: "25",
+    month: "06月",
     title: "古蹟與伴手禮",
     subtitle: "赤崁樓 → 藍晒圖 → 回程",
     dayLabel: "Day 2 / 2",
