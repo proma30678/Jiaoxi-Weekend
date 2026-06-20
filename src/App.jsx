@@ -34,76 +34,98 @@ const days = [
   {
     id: 1,
     weekday: "SAT",
-    date: "30",
-    month: "05月",
-    title: "礁溪小旅行",
-    subtitle: "台北 → 礁溪",
+    date: "01",
+    month: "Day 1",
+    title: "中西區散步",
+    subtitle: "台南車站 → 友愛街",
     dayLabel: "Day 1 / 2",
     plan: [
       {
-        time: "17:00",
-        title: "台大出發",
-        place: "台灣大學",
-        area: "台北",
-        tag: "交通",
-        icon: Bus,
-        note: "前往科技大樓站，搭客運往礁溪。週六建議預留 60–80 分鐘。",
-        destination: "台灣大學",
-        mode: "transit",
-      },
-      {
-        time: "18:30",
-        title: "抵達礁溪轉運站",
-        place: "礁溪轉運站",
-        area: "礁溪",
-        tag: "交通",
-        icon: MapPin,
-        note: "步行(16mins)或短程叫車(5mins)前往偶浴礁溪溫泉旅店。",
-        destination: "礁溪轉運站",
-        mode: "transit",
-      },
-      {
-        time: "19:00",
-        title: "入住偶浴礁溪溫泉旅店",
-        place: "宜蘭縣礁溪鄉仁愛路 27 號",
-        area: "住宿",
-        tag: "泡湯",
+        time: "11:00",
+        title: "抵達台南，先放行李",
+        place: "友愛街旅館 U.I.J Hotel & Hostel",
+        area: "友愛街",
+        tag: "住宿",
         icon: Hotel,
-        note: "先來個雷霆守序XDD，確認房間沒問題後再出門晃晃。",
-        destination: "偶浴礁溪溫泉旅店",
+        note: "建議從台南車站直接搭計程車或公車到友愛街一帶，先寄放行李，讓下午行程用走的就能銜接。",
+        destination: "友愛街旅館",
+        mode: "transit",
+      },
+      {
+        time: "12:00",
+        title: "國華街／友愛市場午餐",
+        place: "國華街、友愛市場周邊",
+        area: "中西區",
+        tag: "午餐",
+        icon: Utensils,
+        note: "第一餐安排在住宿附近，吃碗粿、米糕、牛肉湯、蝦仁飯或甜湯都很順，不用特別拉車。",
+        destination: "台南 國華街 友愛市場",
         mode: "walking",
       },
       {
-        time: "19:30",
-        title: "礁溪市區晚餐",
-        place: "湯圍溝周邊",
-        area: "礁溪",
+        time: "13:40",
+        title: "臺南市美術館 2 館",
+        place: "臺南市中西區忠義路二段 1 號",
+        area: "美術館",
+        tag: "主行程",
+        icon: Star,
+        note: "這趟的主景點。建築本身很適合拍照，也能慢慢看展；若是週六可考慮排晚一點，因為延長開放到晚上。",
+        destination: "臺南市美術館2館",
+        mode: "walking",
+      },
+      {
+        time: "15:40",
+        title: "美術館 1 館／司法博物館外觀",
+        place: "南門路、府前路周邊",
+        area: "孔廟商圈",
+        tag: "散步",
+        icon: Map,
+        note: "如果還想看展就接美術館 1 館；想放鬆則沿著孔廟、司法博物館外觀散步即可。",
+        destination: "臺南市美術館1館",
+        mode: "walking",
+      },
+      {
+        time: "16:40",
+        title: "林百貨與孔廟商圈",
+        place: "林百貨、孔廟周邊",
+        area: "中西區",
+        tag: "選物",
+        icon: Bookmark,
+        note: "適合逛伴手禮、文創小物與老街區。這段離住宿近，累了可以直接回飯店休息。",
+        destination: "林百貨",
+        mode: "walking",
+      },
+      {
+        time: "18:00",
+        title: "回飯店 Check-in／休息",
+        place: "友愛街旅館",
+        area: "住宿",
+        tag: "休息",
+        icon: Home,
+        note: "台南兩天一夜不要硬塞太滿，中間回房間躺一下，晚上才有精神散步。",
+        destination: "友愛街旅館",
+        mode: "walking",
+      },
+      {
+        time: "19:15",
+        title: "海安路／國華街晚餐",
+        place: "海安路、國華街周邊",
+        area: "中西區",
         tag: "晚餐",
         icon: Utensils,
-        note: "建議選市區小吃或輕鬆餐廳，不安排太遠的餐廳。",
-        destination: "礁溪晚餐",
+        note: "晚餐保留彈性，可以吃小吃、鹹粥、牛肉湯，也可以改找餐酒館。重點是都離住宿近。",
+        destination: "台南 海安路 國華街 晚餐",
         mode: "walking",
       },
       {
         time: "20:40",
-        title: "湯圍溝散步",
-        place: "湯圍溝溫泉公園",
-        area: "礁溪",
-        tag: "散步",
-        icon: Map,
-        note: "晚餐後散步、買飲料甜點，節奏放慢。",
-        destination: "湯圍溝溫泉公園",
-        mode: "walking",
-      },
-      {
-        time: "21:30",
-        title: "回房泡湯",
-        place: "偶浴房內湯池",
-        area: "住宿",
-        tag: "泡湯",
-        icon: Waves,
-        note: "再來個旋風守序，中間休息補水，避免泡/砲太久哈哈哈。",
-        destination: "偶浴礁溪溫泉旅店",
+        title: "神農街與河樂廣場夜散步",
+        place: "神農街、河樂廣場",
+        area: "夜散步",
+        tag: "拍照",
+        icon: Heart,
+        note: "晚上走神農街最有氣氛，想喝一杯或買甜點也方便；河樂廣場可作為飯後收尾。",
+        destination: "神農街",
         mode: "walking",
       },
     ],
@@ -111,76 +133,87 @@ const days = [
   {
     id: 2,
     weekday: "SUN",
-    date: "31",
-    month: "05月",
-    title: "日光山茶屋",
-    subtitle: "礁溪 → 台北",
+    date: "02",
+    month: "Day 2",
+    title: "古蹟與伴手禮",
+    subtitle: "赤崁樓 → 藍晒圖 → 回程",
     dayLabel: "Day 2 / 2",
     plan: [
       {
-        time: "08:00",
-        title: "起床與簡單早餐",
-        place: "偶浴礁溪溫泉旅店",
-        area: "住宿",
+        time: "09:00",
+        title: "友愛街附近早餐",
+        place: "友愛街、國華街、民生路周邊",
+        area: "中西區",
         tag: "早餐",
         icon: Coffee,
-        note: "不建議早餐排太滿，保留時間退房與前往茶屋。",
-        destination: "偶浴礁溪溫泉旅店",
+        note: "第二天不要太早趕路，找附近早餐或咖啡店即可，保留退房時間。",
+        destination: "友愛街 早餐",
         mode: "walking",
       },
       {
-        time: "09:00",
-        title: "退房或寄放行李",
-        place: "偶浴櫃台",
+        time: "10:15",
+        title: "退房與寄放行李",
+        place: "友愛街旅館",
         area: "住宿",
         tag: "退房",
         icon: Hotel,
-        note: "若可寄放行李，先寄放再搭車去日光山茶屋。",
-        destination: "偶浴礁溪溫泉旅店",
+        note: "先把行李寄放，接下來的市區景點用走路或短程計程車即可。",
+        destination: "友愛街旅館",
         mode: "walking",
       },
       {
-        time: "09:15",
-        title: "前往日光山茶屋",
-        place: "計程車約 8–10 分鐘",
-        area: "礁溪",
-        tag: "交通",
-        icon: Navigation,
-        note: "中午前要回台北，不建議步行前往。",
-        destination: "日光山茶屋",
-        mode: "driving",
-      },
-      {
-        time: "09:30",
-        title: "日光山茶屋",
-        place: "宜蘭縣礁溪鄉興農路 322 巷 6 號",
-        area: "茶屋",
+        time: "10:40",
+        title: "赤崁樓周邊散步",
+        place: "赤崁樓、祀典武廟、大天后宮",
+        area: "古蹟",
         tag: "主行程",
-        icon: Coffee,
-        note: "建議預約 09:00 或 09:30，拍照與喝茶時間較從容。",
-        destination: "日光山茶屋",
-        mode: "driving",
+        icon: MapPin,
+        note: "赤崁樓周邊景點集中，適合安排 1–1.5 小時慢慢走，也方便補吃小吃。",
+        destination: "赤崁樓",
+        mode: "walking",
       },
       {
-        time: "10:45",
-        title: "返回礁溪轉運站",
-        place: "可先回偶浴拿行李",
-        area: "礁溪",
+        time: "12:10",
+        title: "赤崁樓或國華街午餐",
+        place: "民族路、國華街周邊",
+        area: "中西區",
+        tag: "午餐",
+        icon: Utensils,
+        note: "依照當天排隊狀況選擇，不建議為單一名店排太久，避免壓縮下午回程。",
+        destination: "台南 赤崁樓 午餐",
+        mode: "walking",
+      },
+      {
+        time: "13:30",
+        title: "藍晒圖文創園區",
+        place: "臺南市南區西門路一段 689 巷",
+        area: "文創",
+        tag: "拍照",
+        icon: Bookmark,
+        note: "最後安排輕量景點，拍照、逛小店剛好，也離友愛街一帶不遠。",
+        destination: "藍晒圖文創園區",
+        mode: "walking",
+      },
+      {
+        time: "14:45",
+        title: "買伴手禮／回飯店拿行李",
+        place: "國華街、友愛街周邊",
+        area: "回程前",
+        tag: "伴手禮",
+        icon: Star,
+        note: "可補買甜點、餅舖或文創小物。若回程較晚，也可加一間咖啡廳休息。",
+        destination: "友愛街旅館",
+        mode: "walking",
+      },
+      {
+        time: "16:00",
+        title: "前往台南車站／高鐵台南站",
+        place: "依回程交通選擇",
+        area: "回程",
         tag: "交通",
         icon: Bus,
-        note: "若行李隨身，直接前往轉運站。",
-        destination: "礁溪轉運站",
-        mode: "driving",
-      },
-      {
-        time: "11:10",
-        title: "搭客運回台北",
-        place: "礁溪轉運站 → 台北",
-        area: "台北",
-        tag: "回程",
-        icon: Bus,
-        note: "回程建議預留排隊與候車時間。",
-        destination: "礁溪轉運站",
+        note: "若搭高鐵，可從台南車站轉台鐵沙崙線，或直接搭計程車／接駁車到高鐵站。",
+        destination: "台南車站",
         mode: "transit",
       },
     ],
@@ -188,26 +221,27 @@ const days = [
 ];
 
 const backupSpots = [
-  { name: "林北烤好", type: "晚餐備案", time: "約 60–90 分鐘", desc: "若想吃比較有氣氛的晚餐，可作為週六晚餐備案；建議先查候位狀況。", icon: Utensils, destination: "林北烤好 礁溪", mode: "driving" },
-  { name: "買醉串燒酒場 德陽店", type: "宵夜備案", time: "約 60 分鐘", desc: "晚餐後還想小酌或吃宵夜時可考慮，距離礁溪市區較順。", icon: Utensils, destination: "買醉串燒酒場 德陽店", mode: "driving" },
-  { name: "樂山溫泉拉麵", type: "晚餐備案", time: "約 45–60 分鐘", desc: "礁溪特色餐點，適合想吃簡單又有記憶點的晚餐。", icon: Utensils, destination: "樂山溫泉拉麵", mode: "walking" },
-  { name: "礁溪溫泉廣場", type: "散步備案", time: "約 20–30 分鐘", desc: "若湯圍溝人太多，可改成附近短程散步點。", icon: Map, destination: "礁溪溫泉廣場", mode: "walking" },
-  { name: "甲鳥園", type: "週日備案", time: "約 60–90 分鐘", desc: "若日光山茶屋訂不到早上時段，可改成輕鬆互動景點。", icon: Star, destination: "甲鳥園", mode: "driving" },
-  { name: "跑馬古道公園", type: "自然備案", time: "約 40–60 分鐘", desc: "天氣好、想看山景時可加入；若下雨則不建議。", icon: Map, destination: "跑馬古道公園", mode: "driving" },
+  { name: "安平老街／安平古堡", type: "半日備案", time: "約 2–3 小時", desc: "若第二天回程較晚，可以把赤崁樓改成安平半日；交通建議計程車或公車，不要排太晚。", icon: MapPin, destination: "安平老街", mode: "driving" },
+  { name: "漁光島", type: "海邊備案", time: "約 60–90 分鐘", desc: "天氣好又想看海時可加入，但兩天一夜建議作為加碼，不要硬塞進主線。", icon: Waves, destination: "漁光島", mode: "driving" },
+  { name: "臺南市美術館 1 館", type: "展覽備案", time: "約 60 分鐘", desc: "若 2 館看完還有興趣，可同日延伸到 1 館，兩館距離很近。", icon: Star, destination: "臺南市美術館1館", mode: "walking" },
+  { name: "蝸牛巷", type: "散步備案", time: "約 30–45 分鐘", desc: "住宿附近的短程散步點，適合拍照、轉場或等餐廳空檔。", icon: Map, destination: "蝸牛巷 台南", mode: "walking" },
+  { name: "旭峯號／選物小店群", type: "雨天備案", time: "約 45–60 分鐘", desc: "下雨時可把戶外散步改成選物店與咖啡店串連。", icon: Bookmark, destination: "台南 中西區 選物店", mode: "walking" },
+  { name: "河樂廣場", type: "夜間備案", time: "約 20–40 分鐘", desc: "晚餐後不想走太遠時可到河樂廣場散步，和神農街可一起安排。", icon: Heart, destination: "河樂廣場", mode: "walking" },
 ];
 
 const mapRoutes = [
-  { title: "台大 → 礁溪轉運站", subtitle: "週六出發交通", icon: Bus, origin: "台灣大學", destination: "礁溪轉運站", mode: "transit" },
-  { title: "礁溪轉運站 → 偶浴", subtitle: "抵達後前往住宿", icon: Hotel, origin: "礁溪轉運站", destination: "偶浴礁溪溫泉旅店", mode: "walking" },
-  { title: "偶浴 → 日光山茶屋", subtitle: "週日上午主行程", icon: Coffee, origin: "偶浴礁溪溫泉旅店", destination: "日光山茶屋", mode: "driving" },
-  { title: "日光山茶屋 → 礁溪轉運站", subtitle: "回程銜接客運", icon: Navigation, origin: "日光山茶屋", destination: "礁溪轉運站", mode: "driving" },
+  { title: "台南車站 → 友愛街旅館", subtitle: "抵達後前往住宿", icon: Hotel, origin: "台南車站", destination: "友愛街旅館", mode: "transit" },
+  { title: "友愛街旅館 → 臺南市美術館 2 館", subtitle: "Day 1 主行程", icon: Star, origin: "友愛街旅館", destination: "臺南市美術館2館", mode: "walking" },
+  { title: "美術館 → 神農街", subtitle: "晚餐後夜散步", icon: Heart, origin: "臺南市美術館2館", destination: "神農街", mode: "walking" },
+  { title: "友愛街旅館 → 赤崁樓", subtitle: "Day 2 古蹟散步", icon: MapPin, origin: "友愛街旅館", destination: "赤崁樓", mode: "walking" },
+  { title: "藍晒圖 → 台南車站", subtitle: "回程銜接", icon: Bus, origin: "藍晒圖文創園區", destination: "台南車站", mode: "transit" },
 ];
 
 const notes = [
-  "住宿備註：一大床、禁菸房、房內獨立溫泉湯池、較安靜乾淨的房間。",
-  "日光山茶屋建議預約 09:00 或 09:30，避免壓縮回程時間。",
-  "週六晚餐以羅東為主，To be continue...",
-  "泡湯每次 10–15 分鐘，中間補水休息，避免飯後立刻泡太久。",
+  "住宿建議：友愛街、國華街、海安路一帶，優先選可寄放行李、步行可到美術館與國華街的位置。",
+  "美術館提醒：臺南市美術館週一休館，週六延長開放至 21:00，排週六會更有彈性。",
+  "交通策略：中西區主線以步行為主，安平、漁光島再使用公車或短程計程車。",
+  "飲食策略：保留小吃彈性，不為單一名店排太久，避免兩天一夜節奏被打亂。",
 ];
 
 function DayCard({ day, active, onClick }) {
@@ -336,14 +370,14 @@ function Header() {
   return (
     <header className="relative px-7 pb-5 pt-8">
       <div className="absolute right-7 top-9 flex h-14 w-14 items-center justify-center rounded-full bg-[#fffaf0] text-[#665744] shadow-md"><Settings size={24} /></div>
-      <p className="font-serif text-lg italic tracking-[0.25em] text-[#b08d63]">Jiaoxi Weekend</p>
-      <h1 className="mt-4 font-serif text-5xl font-semibold tracking-wide text-[#4a4037]">礁溪 遊記</h1>
-      <p className="mt-3 text-sm tracking-[0.18em] text-[#9a7f5d]">蕉吸一泊二食，看看30cm的真面目</p>
+      <p className="font-serif text-lg italic tracking-[0.25em] text-[#b08d63]">Tainan Weekend</p>
+      <h1 className="mt-4 font-serif text-5xl font-semibold tracking-wide text-[#4a4037]">台南 遊記</h1>
+      <p className="mt-3 text-sm tracking-[0.18em] text-[#9a7f5d]">友愛街散步、美術館與府城小吃的兩天一夜</p>
     </header>
   );
 }
 
-export default function JiaoxiCoupleTripSite() {
+export default function TainanCoupleTripSite() {
   const [activeDay, setActiveDay] = useState(0);
   const [view, setView] = useState("home");
 
@@ -423,7 +457,7 @@ export default function JiaoxiCoupleTripSite() {
                   <div className="flex items-center gap-3"><Plane size={21} className="text-[#8a6945]" /><h2 className="font-semibold tracking-widest">出發資訊・導航總覽</h2></div>
                   <ExternalLink size={18} className="text-[#a8895f]" />
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-[#66594d]">每日行程、備用景點與 Google Maps 導航都整理在下方。點「從目前位置導航」會以手機當前位置作為起點，抵達時間由 Google Maps 即時估算。</p>
+                <p className="mt-3 text-sm leading-relaxed text-[#66594d]">以友愛街旅館為中心，把美術館、國華街、神農街、赤崁樓與藍晒圖整理成兩天一夜的步行路線。點「從目前位置導航」會直接開啟 Google Maps。</p>
               </section>
 
               <section className="mt-7">
@@ -431,7 +465,7 @@ export default function JiaoxiCoupleTripSite() {
                 <Card className="rounded-[2rem] border-0 bg-[#fffaf0]/90 shadow-[0_12px_30px_rgba(86,68,42,0.12)]">
                   <CardContent className="space-y-4 p-5">
                     {todayPreview.map((item, index) => <TimelineItem key={`${current.id}-${item.time}`} item={item} index={index} compact />)}
-                    <div className="rounded-2xl bg-[#f4ead6] px-4 py-3 text-center text-sm tracking-widest text-[#8a755e]">還有 {current.plan.length - 3} 個行程</div>
+                    <div className="rounded-2xl bg-[#f4ead6] px-4 py-3 text-center text-sm tracking-widest text-[#8a755e]">還有 {Math.max(0, current.plan.length - 3)} 個行程</div>
                   </CardContent>
                 </Card>
               </section>
