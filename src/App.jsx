@@ -372,7 +372,7 @@ function Header() {
       <div className="absolute right-7 top-9 flex h-14 w-14 items-center justify-center rounded-full bg-[#fffaf0] text-[#665744] shadow-md"><Settings size={24} /></div>
       <p className="font-serif text-lg italic tracking-[0.25em] text-[#b08d63]">Tainan Weekend</p>
       <h1 className="mt-4 font-serif text-5xl font-semibold tracking-wide text-[#4a4037]">台南 遊記</h1>
-      <p className="mt-3 text-sm tracking-[0.18em] text-[#9a7f5d]">友愛街散步、美術館與府城小吃的兩天一夜</p>
+      <p className="mt-3 text-sm tracking-[0.18em] text-[#9a7f5d]">友愛一下、美術館與府城小吃的兩天一夜</p>
     </header>
   );
 }
